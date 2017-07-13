@@ -8,6 +8,8 @@ import static org.junit.jupiter.api.Assertions.*;
 class HangmanTest {
     @Test
     void takeWordTest(){
-        assertEquals("Test", "Test");
+        Hangman hman = new Hangman();
+        assertEquals("Test", hman.takeWord());
+        assertEquals("Kaelkirjak", hman.takeWord());
     }
 }
